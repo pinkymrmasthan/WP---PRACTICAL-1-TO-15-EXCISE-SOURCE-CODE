@@ -1,0 +1,25 @@
+<html> 
+    <head> 
+        <title>Uploading files</title>
+     </head> 
+     <body> 
+         <form ACTION="formAction.jsp" METHOD="POST"> 
+             <INPUT TYPE="FILE" NAME="filer"> 
+                <br> 
+                <INPUT TYPE="SUBMIT" VALUE="Submit"> 
+                </form> 
+            </body> 
+            </html>
+
+
+
+    formAction.jsp 
+    <html> 
+        <head> 
+            <title> Uploading Files</title> 
+        </head> 
+        <body> 
+            <h1>Uploading Files</h1>
+             File name: 
+        </body>%=request.getParameter("filer")%>
+    </html>

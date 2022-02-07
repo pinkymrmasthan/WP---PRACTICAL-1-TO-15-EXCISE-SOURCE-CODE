@@ -1,0 +1,23 @@
+<html> 
+<head> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+<title>Ex7</title>
+</head>
+<body>
+<p>Count the number of milliseconds between the two click events on a paragraph</p>
+<div> <p>Click on above paragraph</p></div>
+<script>
+var x,y;
+$("p").click(function(event){
+if(x){
+y=event.timeStamp-x;
+$("div").append("Time since last event."+y+ "<br>");
+
+else{
+$("div").append("<br> Click again. <br>");
+}
+x=event.timeStamp;
+});
+</script>
+</body>
+</html>

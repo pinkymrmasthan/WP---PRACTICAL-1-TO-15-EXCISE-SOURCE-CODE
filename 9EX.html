@@ -1,0 +1,20 @@
+<html> 
+<head> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>   
+<title>Fade in And Out</title> 
+$(document).ready(function(){   
+$("#btn1").click(function(){     
+$("div1").fadeOut("slow");   
+});    
+$("#btn2").click(function(){     
+$("div1").fadeIn("slow");   
+});  
+}); 
+</script> 
+</head> 
+<body> 
+<button id="btn1">Fade Out</button> 
+<button id="btn2">Fade In</button> <br><br> 
+<div id="div1" style="background:blue;width:100px; height: 100px;"></div><br><br>
+</body> 
+</html> 

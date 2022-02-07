@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Frmes Values</title>
+        </head>
+        <frameset cols="50%,50%">
+            <frame SRC="left.html"name="frame1">
+                <frame SRC="right.html"name="frame2">
+        </frameset><noframes></noframes>
+        </html>
+
+        left .html
+        <html>
+            <head>
+                <title>javaScript Example 13</title>
+            </head>
+            <body>
+                <form>
+                    <INPUT type="button"value="click me"
+                    onclick=parent.frame2.location="right.html" target="frame2">
+                </form>
+            </body>
+            </html>
+
+            right .html
+            <!DOCTYPE html>
+            <html>
+                <head>
+                </head>
+                <body>
+                    <h1 onmouseover=style.color="blue">Be Happy</h1>
+                </body>
+            </html>
+

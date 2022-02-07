@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>
+No of times mouse move over a link
+</title>
+</head>
+<body>
+<form name="form1">
+<a href="a.html" name="link" onmouseover="Count1()">link</a>
+<p>
+<b>No of Mouse Move Over Link</b>
+<input type="text"name="txt"></input>
+</form>
+<script>
+let c = 0;
+function Count1(){
+c++;
+form1.txt.value=c;
+alert(c);
+}
+</script>
+</body>
+</html>

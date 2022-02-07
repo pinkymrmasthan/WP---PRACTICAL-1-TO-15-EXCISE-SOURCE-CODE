@@ -1,0 +1,32 @@
+<html> 
+<head>  
+<script type="text/javascript">  
+var c=0  
+var s  
+function photoGallery()  
+{
+if (c%4==0){  
+document.getElementById('photo-gallery').src = "1.gif";
+}  
+if (c%4==1){  
+document.getElementById('photo-gallery').src = "2.gif";
+}  
+if (c%4==2){  
+document.getElementById('photo-gallery').src = "3.gif";  
+}  
+if (c%4==3){  
+document.getElementById('photo-gallery').src = "4.gif";  
+} 
+c=c+1  
+s=setTimeout("photoGallery()",2000)  
+}  
+</script> 
+</head>  
+<body onLoad="photoGallery()"> 
+<table border="1"> 
+<tr>
+<td><img src="masthan.jpg" id="photo-gallery" width="600" height="100"></td> 
+</tr> 
+</table> 
+</body>  
+</html> 

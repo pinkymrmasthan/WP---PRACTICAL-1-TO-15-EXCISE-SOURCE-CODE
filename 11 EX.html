@@ -1,0 +1,56 @@
+<!-- index.html -->
+<html>
+<body>
+<form method="POST" action="result.jsp">
+<center>
+Select the word(s): <br><br>
+<table>
+<tr>
+<td><input type="checkbox" name="sports" value="Hypertext Transfer Protocol"></td>	 
+<td>HTTP</td>
+</tr>
+<tr>
+<td><input type="checkbox" name="sports" value="Hypertext Markup Language"></td>	 
+<td>HTML</td>
+</tr>
+<tr>
+<td><input type="checkbox" name="sports" value="Cascading Style Sheets"></td>
+<td>CSS</td>
+</tr>
+<tr>
+<td><input type="checkbox" name="sports" value="World Wide Web"></td>
+<td>WWW</td>
+</tr>
+<tr>
+<td><input type="checkbox" name="sports" value="Hypertext Preprocessor"></td>	 
+<td>PHP</td>
+</tr>
+</table>
+<br>
+<input type="submit" name="submit" value="Submit">
+</center>
+</form>
+</body>
+</html>
+
+
+
+<!-- result.jsp -->
+<html>
+<body>
+<%! String[] sports; %>
+<center>You have selected: <br><br>
+<% 
+   sports = request.getParameterValues("sports");
+   if (sports != null) 
+   {
+      for (int i = 0; i < sports.length; i++) 
+      {
+         out.println ("<b>"+sports[i]+"<b><br>");
+      }
+   }
+   else out.println ("<b>none<b>");
+%>
+</center>
+</body>
+</html>
